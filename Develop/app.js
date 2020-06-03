@@ -18,19 +18,19 @@ const render = require("./lib/htmlRenderer");
 const generalQuestions = [{
     type: "input",
     name: "name",
-    message: "What is the employees name?",
+    message: "What is the employees name?"
   }, {
     type: "input",
     name: "id",
-    message: "What is the employees name?",
+    message: "What is the employees id?"
   }, {
     type: "input",
     name: "email",
-    message: "What is the employees name?",
+    message: "What is the employees email address?"
   }, {
     type: "list",
     name: "role",
-    message: "What is the employees name?",
+    message: "What is the employees role?",
     choices: [
         'manager',
         'engineer',
@@ -40,21 +40,46 @@ const generalQuestions = [{
 
 let employees = [];
 
+
 inquirer.prompt(generalQuestions).then(function(answers){
       console.log(answers.name)
       if(answers.role === "manager"){
         inquirer.prompt([{
             type: "number",
             name: "officeNumber",
-            message: "Input manager's office number",
+            message: "Input manager's office number"
           }]).then(function(managerAnswers){
-              let manager = new Manager(answers.name, answers.id, answers.email, managerAnswers.officenumber)
+              let manager = new Manager(answers.name, answers.id, answers.email, managerAnswers.officeNumber)
               employees.push(manager)
-          })
-      } else if (answers.role === 'engineer'){
+              console.log(manager);
+          });
+      
+        } else if (answers.role === "engineer"){
+        inquirer.prompt([{
+          type: "input",
+          name: "github",
+          message: "Input the engineer's GitHub username"
+        }]).then(function(engineerAnswers){
+            let engineer = new Engineer(answers.name, answers.id, answers.email, engineerAnswers.github)
+            employees.push(engineer)
+            console.log(engineer);
+        });
           
-      }
-})
+      }else if  (answers.role === 'intern'){
+        inquirer.prompt([{
+          type: "input",
+          name: "school",
+          message: "Input intern's school",
+        }]).then(function(internAnswers){
+            let intern = new Intern(answers.name, answers.id, answers.email, internAnswers.school)
+            employees.push(intern)
+            console.log(intern);
+        });
+      
+}
+});
+
+
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
