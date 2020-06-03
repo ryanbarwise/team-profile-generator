@@ -45,8 +45,8 @@ inquirer.prompt(generalQuestions).then(function(answers){
       if(answers.role === "manager"){
         inquirer.prompt([{
             type: "number",
-            name: "officenumber",
-            message: "Input manager ID",
+            name: "officeNumber",
+            message: "Input manager's office number",
           }]).then(function(managerAnswers){
               let manager = new Manager(answers.name, answers.id, answers.email, managerAnswers.officenumber)
               employees.push(manager)

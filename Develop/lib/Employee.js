@@ -7,13 +7,22 @@ class Employee {
     }
 
     getName() {
-        return this.name
+        return this.name;
     }
 
 
     getRole(){
-        return 'Employee'
+        return 'Employee';
+    }
+
+    getId() {
+        return this.id;
+    }
+
+    getEmail() {
+        return this.email;
     }
 }
 
-export default Employee;
+//export default Employee;
+module.exports = Employee;
