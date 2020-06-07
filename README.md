@@ -1,13 +1,13 @@
 
   
-  # template-engine
+  # team-profile-generator
   
-  [![GitHub license](https://img.shields.io/github/last-commit/ryanbarwise/template-engine)](https://github.com/ryanbarwise/team-profile-generator)
+  [![GitHub license](https://img.shields.io/github/last-commit/ryanbarwise/team-profile-generator)](https://github.com/ryanbarwise/team-profile-generator)
    
 
 
   ## Description
- User can use the CLI to generate a webpage to display basic information about their team
+ the team-profile-generator uses a CLI which prompts a series of questions in order to create a webpage which will display basic information about employees
 
   ## Table of Contents
   1. [License](#license)
@@ -31,16 +31,15 @@
 
   <a name = "repo"></a>
   ## Repo
-  feel free to use it however you would like
+  feel free to browse the repo use it as you see fit
 
   <a name = "contributions"></a>
   ## Contributions 
-   send an email
+   send me an email
 
   <a name = "contact"></a>
   ## Contact
   <ryanbarwise@gmail.com>
-
   
   
 
