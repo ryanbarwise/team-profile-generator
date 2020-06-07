@@ -2,7 +2,7 @@
   
   # template-engine
   
-  [![GitHub license](https://img.shields.io/github/last-commit/ryanbarwise/template-engine)](https://github.com/ryanbarwise/template-engine)
+  [![GitHub license](https://img.shields.io/github/last-commit/ryanbarwise/template-engine)](https://github.com/ryanbarwise/team-profile-generator)
    
 
 
