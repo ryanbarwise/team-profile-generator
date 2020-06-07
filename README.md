@@ -41,6 +41,7 @@
   ## Contact
   <ryanbarwise@gmail.com>
   
+  ![](template-generator-gif.gif)
   
 
   
